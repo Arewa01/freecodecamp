@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css"/>
+<title> Survey form For Devs </title>
+</head>
+
+<body>
+<div class="intro">
+<h1 id="title">Survey Form For Devs</h1>
+<p id="description">Please fill in the survery form below </p>
+  </div>
+<form id="survey-form" class="survey-form" action="https://survey-form.freecodecamp.rocks">
+<fieldset>
+
+<label id="name-label" >Full Name <input id="name" type="text" placeholder="name" name="name" required/></label> </br>
+
+  <label id="email-label"> E-mail <input id="email" type="email" placeholder="Enter your email" name="email" required/></label> <br>
+
+
+  <label id="number-label">Age (optional) <input id="number" placeholder="Age" name="age" min="13" max="30" optional /></label>
+  <br>
+
+  <label> How did you learn software development?</label>
+    <select name="role" id="dropdown">
+      <option value="">Select your learning path </option>
+      <option value="1">Bootcamp </option>
+      <option value="2">University </option>
+      <option value="3">Online </option>
+      <option value="4">Others </option>
+    
+  </select>
+  <br>
+  <label>If others, state here: <input type="text" id="others"/>
+ <label> 
+   </br>
+
+<label>What role(s) do you play?</label>
+ <label><input name="refferer" class="inline" value="definitely" type="radio"> Definitely </label>
+ <label><input name="refferer" class="inline" value="maybe" type="radio"> Maybe </label>
+ <label><input name="refferer" class="inline" value="notsure" type="radio"> Not sure </label>
+  </fieldset> 
+  
+<fieldset>
+
+   <label> How do you work?</label>
+    <select name="role" id="dropdown2">
+      <option value="">Select an option </option>
+      <option value="1">Freelance </option>
+      <option value="2">Remote work</option>
+      <option value="3">Office work</option>
+    
+    
+  </select>
+</br>
+</br>
+
+  <label>What would you like to see improved? (Check all that apply)</label>
+<label><input name="refferer" class="inline" type="checkbox" value="frontend"> Front-end Development </label>
+ <label><input name="refferer" class="inline" type="checkbox" value="backend"> Back-end Development </label>
+ <label><input name="refferer" class="inline" type="checkbox" value="data"> Data Analytics </label>
+ <label><input name="refferer" class="inline" type="checkbox" value="challenges"> Machine learning </label> 
+ <label><input name="refferer" class="inline" type="checkbox" value="opensource"> Cloud Administrator </label>
+ <label><input name="refferer" class="inline" type="checkbox" value="additional"> Others</label>
+  </fieldset> 
+<fieldset>
+<label>Any comments or suggestions?</label>
+<textarea row="6" cols="30" placeholder="Enter your comment here"></textarea>
+  </fieldset>
+  <input id="submit" type="submit" value="submit"/>
+ 
+
+   </form>
+  </body>
+</html>
